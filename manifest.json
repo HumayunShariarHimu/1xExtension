@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "1xBet AI Helper",
+  "version": "1.0",
+  "description": "1xBet থেকে ডাটা নিয়ে AI গাইড দেয়",
+  "permissions": ["activeTab", "scripting"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.1xbet.*/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
